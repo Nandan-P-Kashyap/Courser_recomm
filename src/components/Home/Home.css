@@ -1,0 +1,129 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .home-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 50px;
+    color: white;
+  }
+  
+  .hero-image {
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  .hero-text {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Recommended Websites Section */
+  .recommendations {
+    margin-top: 40px;
+  }
+  
+  .grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .logo-container {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  /* Glassmorphism effect */
+  .glass-bg {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    width: 120px;
+    height: 120px;
+    animation: moveSideways 3s infinite alternate ease-in-out;
+  }
+  
+  .logo {
+    width: 100px; /* Adjust size */
+    height: 100px;
+    object-fit: contain; /* Prevents distortion */
+    transform: rotate(0deg); /* Ensures no unintended rotation */
+  }
+  
+  
+  /* Hover effect */
+  .logo-container:hover {
+    transform: scale(1.1);
+  }
+
+  .logo-scroller {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes moveSideways {
+    from {
+      transform: translateX(-5px);
+    }
+    to {
+      transform: translateX(5px);
+    }
+  }
+  
+  /* Login Section */
+  .login-section {
+    margin-top: 500px;
+    padding: 50px;
+    background: #f4f4f4;
+    border-top: 2px solid #ccc;
+  }
+  
+  .login-btn {
+    padding: 10px 20px;
+    background: #ff7e5f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  .login-btn:hover {
+    background: #ff5733;
+  }
+  .scrolling-ribbon {
+    display: flex;
+    gap: 30px;
+    width: max-content;
+  }
